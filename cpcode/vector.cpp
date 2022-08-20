@@ -45,5 +45,16 @@ cout<<"\n";
     cout<<u<<" ";
   }
   cout<<"\n";
+
+  //sorting a vector
+  vector<int>a={5,1,3,2,4};
+  sort(a.begin(),a.end());
+  for(int u:a)cout<<u<<" "; //printing vector less than to greater than
+  cout<<"\n";
+  
+  sort(a.begin(),a.end(),greater<int>());
+  cout<<"------------------------------ \n";
+  for(int u:a)cout<<u<<" "; //printing vector greater than to less than
+  cout<<"\n";
     return 0;
 }
